@@ -22,3 +22,12 @@ def details(request, id):
 def main(request):
    template = loader.get_template("main.html")
    return HttpResponse(template.render(request))
+
+
+def testing(request):
+   mydata = Member.objects.all()
+   template = loader.get_template("template.html")
+   context = {
+      'mymembers': mydata,
+   }
+   return HttpResponse(template.render(context, request))
