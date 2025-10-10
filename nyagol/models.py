@@ -8,5 +8,5 @@ class Member (models.Model):
     contact = models.IntegerField(null=True)
     joined_date = models.DateTimeField(null=True)
 
-    def __str__(self):
-        return f"{self.firstname} {self.lastname} {self.contact} {self.joined_date}"
+    # def __str__(self):
+    #     return f"{self.firstname} {self.lastname} {self.contact} {self.joined_date}"
